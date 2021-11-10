@@ -1,0 +1,29 @@
+{
+  "name": "website-api-sankaku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SahrulGamerz/Website-API-Sankaku.git"
+  },
+  "author": "YewonKim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SahrulGamerz/Website-API-Sankaku/issues"
+  },
+  "homepage": "https://github.com/SahrulGamerz/Website-API-Sankaku#readme",
+  "dependencies": {
+    "@firebase/storage": "^0.8.6",
+    "adm-zip": "^0.5.9",
+    "axios": "^0.23.0",
+    "canvas": "^2.8.0",
+    "express": "^4.17.1",
+    "gif-encoder-2": "^1.0.5",
+    "pixiv-api-client": "^0.25.0"
+  }
+}
