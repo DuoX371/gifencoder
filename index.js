@@ -29,8 +29,6 @@ app.get('/gif/encode', async function(req, res) {
 		let id = req.query['id']
 		let width = req.query['w'];
 		let height = req.query['h']
-		console.log(width,height);
-		console.log(id);
 		getDownloadURL(ref(storage, `${id}.gif`))
 			.then(async (url) => {
 				return res.status(200).send({url: url});
