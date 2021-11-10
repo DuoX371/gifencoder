@@ -17,7 +17,7 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 const storage = getStorage(firebaseApp);
 
-const PORT = process.env.port | 80;
+const PORT = process.env.port | 3000;
 let conf = {responseType: "arraybuffer",headers:{"Referer": `https://www.pixiv.net`,}};
 
 app.get('/', async function(req, res){
