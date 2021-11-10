@@ -46,7 +46,7 @@ app.get('/gif/encode', async function(req, res) {
 
 					const zip = new AdmZip(zipData.data)
 					const entries = zip.getEntries();
-					const canvas = createCanvas(width, height)
+					const canvas = createCanvas(parseInt(width), parseInt(height))
 					const ctx = canvas.getContext('2d')
 					const encoder = new GIFEncoder(width, height);
 					encoder.start();
@@ -86,7 +86,7 @@ app.get('/gif/encode', async function(req, res) {
 						}
 					},
 					(error) => {
-						return res.status(500).send({err: "and error has occured"});
+						return res.status(500).send({err: "an error has occured"});
 					},
 					() => {
 						// Handle successful uploads on complete
